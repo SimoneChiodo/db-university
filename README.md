@@ -1,16 +1,13 @@
-# Testo esercizio:
+# Esercizio Modellazione Database Università
 
-Modellizzare la struttura di un database per memorizzare tutti i dati riguardanti una università:
+## Descrizione
 
--   sono presenti diversi Dipartimenti (es.: Lettere e Filosofia, Matematica, Ingegneria ecc.);
--   ogni Dipartimento offre più Corsi di Laurea (es.: Civiltà e Letterature Classiche, Informatica, Ingegneria Elettronica ecc..)
--   ogni Corso di Laurea prevede diversi Corsi (es.: Letteratura Latina, Sistemi Operativi 1, Analisi Matematica 2 ecc.);
--   ogni Corso può essere tenuto da diversi Insegnanti;
--   ogni Corso prevede più appelli d'Esame;
--   ogni Studente è iscritto ad un solo Corso di Laurea;
--   ogni Studente può iscriversi a più appelli di Esame;
--   per ogni appello d'Esame a cui lo Studente ha partecipato, è necessario memorizzare il voto ottenuto, anche se non sufficiente.
+L'obiettivo di questo esercizio è progettare la struttura di un database per gestire i dati di un'università, considerando le seguenti entità e relazioni:
 
-Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi di stabilirne le relazioni. Infine, andiamo a definire le colonne e i tipi di dato di ogni tabella.
-Utilizzare https://www.drawio.com/ per la creazione dello schema.
-Esportare quindi il diagramma in jpg e caricarlo nella repo.
+- **Dipartimenti**: rappresentano le grandi aree disciplinari (es. Lettere e Filosofia, Matematica, Ingegneria).
+- **Corsi di Laurea**: ogni Dipartimento offre diversi corsi di laurea (es. Informatica, Civiltà e Letterature Classiche).
+- **Corsi**: ogni corso di laurea prevede vari corsi specifici (es. Sistemi Operativi 1, Analisi Matematica 2).
+- **Insegnanti**: possono tenere più corsi.
+- **Appelli d’Esame**: ogni corso ha più appelli.
+- **Studenti**: iscritti ad un solo corso di laurea ma possono partecipare a più appelli d’esame.
+- **Risultati Esame**: per ogni appello a cui uno studente partecipa, si memorizza il voto, anche se insufficiente.
